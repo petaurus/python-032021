@@ -20,5 +20,4 @@ vysledek = vitezove_razeni_2.groupby(["state"])["compare"].sum()
 
 vyhodnoceni_serazeno = vysledek.sort_values()
 
-
 print(vyhodnoceni_serazeno)
