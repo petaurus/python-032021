@@ -18,6 +18,7 @@ def popisek(radek):
     return f"{zvire} preferuje následující typ stravy: {strava}. Konkrétně ocení když mu do misky přistanou {typ_stravy}. \nJak toto zvíře poznáme: {znaky_zvirete}."
 
 lexikon["popisek"] = lexikon.apply(popisek, axis=1)
+
 print(lexikon["popisek"])
 
 print(lexikon["popisek"][320])

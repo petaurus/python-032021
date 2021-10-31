@@ -21,4 +21,5 @@ for idx, zvire in lexikon.iterrows():
     nazev_zvirete = zvire["title"]
     if not check_url(zvire):
         neplatne_url = neplatne_url.append({"nazev_zvirete": nazev_zvirete}, ignore_index=True)
+
 print(neplatne_url)
