@@ -48,18 +48,14 @@ for index, radek in crypto_prices_pivot.corr().iterrows():
         max = result
         max_index = index
 
-print(max)
-print(max_index)
-
-max_sloupec = crypto_prices_pivot.corr()[max_index]
-print(max_sloupec[max_sloupec == max])
-
 #max
 seaborn.jointplot("BTC", "WBTC", crypto_prices_pivot.corr(), kind='scatter', color='blue')
 #min
 seaborn.jointplot("SOL", "USDC", crypto_prices_pivot.corr(), kind='scatter', color='green')
 plt.show()
 
-XMR = crypto_prices[crypto_prices["Symbol"] == "XMR"]["pct"] + 1
-XMR = XMR.tolist()[1:]
-print(statistics.geometric_mean(XMR))
+print(max)
+print(max_index)
+
+max_sloupec = crypto_prices_pivot.corr()[max_index]
+print(max_sloupec[max_sloupec == max])
